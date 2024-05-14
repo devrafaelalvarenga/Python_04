@@ -2,14 +2,14 @@
 
 ## typehint é uma dica de tipagem 'Boa pratica'. Ele nao valida/altera nenhuma variavel 
 
-idade = 25 #inteiro
-idade: int = 25
+- idade = 25 #inteiro
+- idade: int = 25
 
-nome = 'ana' #string
-nome: str = 'ana'
+- nome = 'ana' #string
+- nome: str = 'ana'
 
-lista = []
-dicionari = {chave:valor}
+- lista = []
+- dicionario = {chave:valor}
 
 ranking = sorted(ranking.items(), key=itemgetter(1), reverse=True)
 
