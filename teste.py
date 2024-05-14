@@ -1,7 +1,3 @@
-#faça um programa que leia e a media de um aluno, 
-#guardando tambem a situaçao em um dicionario
-#no final mostre o conteudo da estrutura na tela
-
 base_calculo_media = 4
 dict_aluno = dict()
 nome = False
