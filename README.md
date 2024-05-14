@@ -10,3 +10,14 @@ nome: str = 'ana'
 
 lista = []
 dicionari = {chave:valor}
+
+ranking = sorted(ranking.items(), key=itemgetter(1), reverse=True)
+
+A função sorted() retorna uma lista classificada do objeto iterável especificado.
+#sorted(iterable, key=key, reverse=reverse)
+
+key=itemgetter()
+#coletor de itens #
+
+reverse=True
+#ordenação dos itens

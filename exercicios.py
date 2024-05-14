@@ -51,3 +51,24 @@ elif media < 7:
 print(f'Nome do aluno: {dict_aluno['nome']}')        
 print('Média do aluno:',media)
 print('Situação:',dict_aluno['situacao'])
+
+# Crie um programa onde 4 jogadores joguem um dado e tenham resultados aleatórios. 
+# Guarde esses resultados em um dicionário em Python. 
+# No final, coloque esse dicionário em ordem, sabendo que o vencedor tirou o maior número no dado.
+
+from random import randint
+from time import sleep
+from operator import itemgetter #coletor de itens #
+
+ranking = dict()
+
+ranking['jogador_1'] = randint(1, 6)
+ranking['jogador_2'] = randint(1, 6)
+ranking['jogador_3'] = randint(1, 6)
+ranking['jogador_4'] = randint(1, 6)
+
+ranking = sorted(ranking.items(), key=itemgetter(1), reverse=True)
+print('=== Ranking de jogadores ===')
+for i, v in enumerate(ranking):
+    print(f'{i+1}º Lugar: {v[0]} tirou {v[1]}')
+    sleep(1)
